@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "Open Sans";
+    src: local("Open sans"), url("@/fonts/OpenSans.ttf") format("truetype");
+}
+
+html,
+body,
+#app {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    color: #202123;
+}
+
+.DefaultLayout {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background: #E1E1E1;
+    &__view {
+        margin: 50px auto 27px;
+        width: 90%;
+    }
+}
+
+@media(max-width: 800px) {
+    .DefaultLayout {
+        overflow: hidden;
+        &__view {
+            margin: 16px;
+        }
+    }
+}
